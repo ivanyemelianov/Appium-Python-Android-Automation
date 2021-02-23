@@ -13,3 +13,6 @@ class Page:
         e = self.find_element(*locator)
         e.clear()
         e.send_keys(text)
+
+    def wait(self, time):
+        self.driver.implicitly_wait(time)
